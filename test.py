@@ -1,6 +1,8 @@
-a = 10
+n=5
+d=4
+a = [1,2,3,4,5]
 
-def add(a):
-    return 2*a
-add(a)
+for i in range(d):
+    a.append(a.pop(0))
+
 print(a)
