@@ -1,6 +1,6 @@
 import java.util.*;
 import java.security.*;
-public class Solution {
+public class HackerRank_Java_int_to_String {
  public static void main(String[] args) {
 
   DoNotTerminate.forbidExit();

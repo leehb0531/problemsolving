@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Solution {
+public class HackerRank_Cut_the_sticks {
 
     // Complete the cutTheSticks function below.
     static int[] cutTheSticks(int[] arr) {
