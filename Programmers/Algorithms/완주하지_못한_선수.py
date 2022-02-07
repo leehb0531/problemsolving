@@ -19,20 +19,24 @@
 def solution(participant, completion):
     answer = ''
     # 각 list 를 sort 한다
-    sortedP = sorted(participant)
-    sortedC = sorted(completion)
+    participant.sort()
+    completion.sort()
 
     # completion 수만큼 loop를 돌리고
-    for i in range(len(sortedC)):
+    for i in range(completion):
         # 각 sorted list의 값을 비교하여 다르면
-        if sortedP[i] != sortedC[i]:
+        if participant[i] != completion[i]:
             # sorted participant list 의 값이 완주하지 못한 사람이다.
-            answer += ''.join(sortedP[i])
+            answer += ''.join(participant[i])
+            # 다른 값을 찾았다면 for loop에서 나가야 한다.
+            break
     # completion 사람 수만큼 비교 했는데 전부 두 명단에 있는 것을 확인 했다면
     if not answer:
         # sorted applicant의 마지막 사람이 완주하지 못한 것이다.
-        answer += ''.join(sortedP[-1])
+        answer += ''.join(participant[-1])
     return answer
 
 # 이 방법은 O(n) 이라 이전 보다는 효율적이다.
 # 하지만 이 경우 에외 처리가 필요해보인다.
+
+# 예외는 break 였다. 정답을 찾은 뒤의 값들은 무시해야한다.
