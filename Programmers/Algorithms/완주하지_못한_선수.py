@@ -23,7 +23,7 @@ def solution(participant, completion):
     completion.sort()
 
     # completion 수만큼 loop를 돌리고
-    for i in range(completion):
+    for i in range(len(completion)):
         # 각 sorted list의 값을 비교하여 다르면
         if participant[i] != completion[i]:
             # sorted participant list 의 값이 완주하지 못한 사람이다.
