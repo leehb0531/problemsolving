@@ -1,2 +1,3 @@
-n = int(input())
-print((220-n)*0.9)
+a = {1}
+b = {2}
+print(a|b)
